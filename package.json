@@ -1,0 +1,18 @@
+{
+  "name": "blobloblob",
+  "version": "0.0.14",
+  "license": "ISC",
+  "esnext": "./blobloblob.mjs",
+  "jsnext:main": "./blobloblob.mjs",
+  "main": "./blobloblob.mjs",
+  "scripts": {
+    "prepublishOnly": "rollup blobloblob.mjs --external mime-types,stream,busboy,fs,path,os --format commonjs --file blobloblob.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.27.5"
+  },
+  "dependencies": {
+    "busboy": "^0.3.1",
+    "mime-types": "^2.1.25"
+  }
+}
